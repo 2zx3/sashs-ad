@@ -1,6 +1,6 @@
 body{
     margin: 0px 0px 0px 0px;
-    background: linear-gradient(#060313, #222222);
+    background: linear-gradient(#00c3ff, #222222);
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: sans-serif, monospace;
@@ -72,12 +72,87 @@ nav a:active{
         background-color: hsla(0, 0%, 100%, 0.37);
     }
     100%{
-        background-color: hsla(0, 0%, 100%, 0.658);
-    }
+        background-color: hsla(0, 0%, 100%, 0.658);}
 }
 
+.blur-section {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
 
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('Stand\ Alone.jpg') center/cover no-repeat;
+    filter: blur(3px);
+    z-index: 1;
+}
 
+.overlay-text {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    padding: 20px;
+}
+
+.overlay-text h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin: 10px 0;
+    text-shadow: 7px 7px 4px rgba(0, 0, 0, 0.7);
+}
+
+.overlay-text h2 {
+    color: white;
+    font-size: 1.5rem;
+    margin: 5px 0;
+    text-shadow: 7px 7px 4px rgba(0, 0, 0, 0.7);
+}
+
+.circular-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    top: auto;
+    left: auto;
+    filter: drop-shadow(20px 20px 20px rgb(0, 0, 0));
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+    text-align: center;
+}
+th, td {
+    padding: 8px;
+    width: fit-content;
+}
+
+footer {
+    background-color: #003366;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+footer p {
+    font-size: 1rem;
+}
 
 /*
 

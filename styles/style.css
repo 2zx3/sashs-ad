@@ -1,0 +1,153 @@
+body{
+    margin: 0px 0px 0px 0px;
+    background: linear-gradient(#060313, #222222);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: sans-serif, monospace;
+    color:aliceblue;
+    min-height: 100vh;
+}
+
+*{
+    margin: 0;
+    padding: 0px;
+}
+
+nav{
+    background: linear-gradient(#e6cf00, goldenrod);
+    height: 50px;
+    box-shadow: 3px 3px 5px rgba(238, 255, 0, 0.479)
+}
+
+
+ul{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover{
+    animation: hoverAnim 400ms;
+    animation-fill-mode: forwards;
+}
+
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+
+
+@keyframes hoverAnim{
+    0%{
+        background-color: hsla(0, 0%, 100%, 0)
+    }
+    100%{
+        background-color: hsla(0, 0%, 100%, 0.37)
+    }
+}
+
+nav a:active{
+    animation: clickAnim 400ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes clickAnim{
+    0%{
+        background-color: hsla(0, 0%, 100%, 0.37);
+    }
+    100%{
+        background-color: hsla(0, 0%, 100%, 0.658);
+    }
+}
+
+
+
+
+/*
+
+.topNavigation{
+    background: linear-gradient(rgb(230, 207, 0), goldenrod);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navButtons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topNavigation a{
+    padding: 10px 20px 10px 20px;
+    border-color: goldenrod ;
+    text-decoration: none;
+    color:#08041a;
+    
+}
+
+
+.topNavigation a.active{
+    border-style: solid;
+    border: 1px 1px 1px 1px;
+    border-color: black ;
+    background-color: #060313;
+    color:aliceblue;
+}
+
+.topNavigation a.inactive:hover{
+    
+
+    animation: 400ms ease-in-out hoverAnimation;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hoverAnimation{
+
+    100%{
+        border-color: black ;
+        background-color: #060313;
+        color:aliceblue;
+    }
+    0%{
+        border-color: goldenrod ;
+        color:#08041a;
+        background-color: goldenrod;
+    }
+
+}
+
+.topNavigation a:hover::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    background: hsla(0 0% 0% 40%);
+}
+
+.topNavigation ul{
+    list-style: none;
+
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+    */

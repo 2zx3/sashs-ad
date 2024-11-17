@@ -1,11 +1,18 @@
 body{
     margin: 0px 0px 0px 0px;
-    background: linear-gradient(#00c3ff, #222222);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     font-family: sans-serif, monospace;
     color:aliceblue;
     min-height: 100vh;
+    background-image: url('Stand\ Alone.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.content{
+    z-index: 990;
+    filter: none;
 }
 
 *{
@@ -16,9 +23,15 @@ body{
 nav{
     background: linear-gradient(#e6cf00, goldenrod);
     height: 50px;
-    box-shadow: 3px 3px 5px rgba(238, 255, 0, 0.479)
+    box-shadow: 3px 3px 5px rgba(238, 255, 0, 0.479);
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
+main{
+    z-index: 998;
+}
 
 ul{
     list-style: none;
@@ -75,23 +88,6 @@ nav a:active{
         background-color: hsla(0, 0%, 100%, 0.658);}
 }
 
-.blur-section {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-}
-
-.background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('Stand\ Alone.jpg') center/cover no-repeat;
-    filter: blur(3px);
-    z-index: 1;
-}
 
 .overlay-text {
     position: relative;
@@ -102,20 +98,20 @@ nav a:active{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgba(255, 255, 255, 0.3);
     text-align: center;
     padding: 20px;
+    border-radius: 35px;
 }
 
 .overlay-text h1 {
-    color: white;
+
     font-size: 2.5rem;
     margin: 10px 0;
     text-shadow: 7px 7px 4px rgba(0, 0, 0, 0.7);
 }
 
 .overlay-text h2 {
-    color: white;
+
     font-size: 1.5rem;
     margin: 5px 0;
     text-shadow: 7px 7px 4px rgba(0, 0, 0, 0.7);
@@ -139,13 +135,19 @@ table {
 }
 th, td {
     padding: 8px;
-    width: fit-content;
+    width: 40vw;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 35px;
+}
+
+
+.spacer{
+    opacity: 0;
 }
 
 footer {
     background-color: #003366;
     text-align: center;
-    color: white;
     padding: 20px;
     position: relative;
 }
@@ -154,75 +156,10 @@ footer p {
     font-size: 1rem;
 }
 
+
 /*
-
-.topNavigation{
-    background: linear-gradient(rgb(230, 207, 0), goldenrod);
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.navButtons{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.topNavigation a{
-    padding: 10px 20px 10px 20px;
-    border-color: goldenrod ;
-    text-decoration: none;
-    color:#08041a;
-    
-}
-
-
-.topNavigation a.active{
-    border-style: solid;
-    border: 1px 1px 1px 1px;
-    border-color: black ;
-    background-color: #060313;
-    color:aliceblue;
-}
-
-.topNavigation a.inactive:hover{
-    
-
-    animation: 400ms ease-in-out hoverAnimation;
-    animation-fill-mode: forwards;
-}
-
-@keyframes hoverAnimation{
-
-    100%{
-        border-color: black ;
-        background-color: #060313;
-        color:aliceblue;
-    }
-    0%{
-        border-color: goldenrod ;
-        color:#08041a;
-        background-color: goldenrod;
-    }
-
-}
-
-.topNavigation a:hover::after{
-    content: '';
-    position: absolute;
-    width: 10px;
-    height: 100%;
-    background: hsla(0 0% 0% 40%);
-}
-
-.topNavigation ul{
-    list-style: none;
-
-}
-
-.buttons{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-    */
+this style sheet is made by 2zx2
+so dont u dare copy this or else
+i will give u a cookie for finding
+this comment lmao
+*/

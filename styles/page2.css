@@ -10,6 +10,12 @@ body{
 
 }
 
+
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .content{
     z-index: 990;
     filter: none;
@@ -139,8 +145,41 @@ table img {
     background-color: rgba(0, 0, 0, 0.7);
     border: 10px solid transparent;
     border-image: linear-gradient( #e6cf00, goldenrod);
+    animation: bord 4s infinite alternate;
     border-image-slice: 1;
     padding: 20px;
+}
+
+h1:hover{
+    animation: invert 300ms ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bord {
+    0%{
+        border-image: linear-gradient( #e6cf00, goldenrod);
+    }
+    30%{
+        border-image: linear-gradient( #a1e600, rgb(184, 218, 32));
+    }
+    50%{
+        border-image: linear-gradient( #00e668, rgb(32, 218, 187));
+    }
+    80%{
+        border-image: linear-gradient( #00a5e6, rgb(32, 144, 218));
+    }
+    100%{
+        border-image: linear-gradient( #4500e6, rgb(150, 32, 218));
+    }
+}
+
+@keyframes invert {
+    from{
+        filter: invert(0);
+    }
+    to{
+        filter: invert(1);
+    }
 }
 
 h1{

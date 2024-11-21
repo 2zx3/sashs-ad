@@ -10,6 +10,11 @@ body{
 
 }
 
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .content{
     z-index: 990;
     filter: none;
@@ -27,6 +32,7 @@ nav{
     position: sticky;
     top: 0;
     z-index: 999;
+    width: 100vw;
 }
 
 main{
